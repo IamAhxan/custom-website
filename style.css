@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+body{
+    background: #f5f5f5;
+}
+.upper-header{
+    text-align: center;
+}
+.upper-header h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.upper-header p{
+    margin-bottom: 50px;
+}
+
+/* Navbar */
+
+.navbar{
+    background: #333;
+    overflow: hidden;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.article{
+    float: left;
+    width: 75%;
+}
+.card{
+    margin: 50px 20px;
+    background: #fff;
+    padding: 20px 20px 50px 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar{
+    float: left;
+    width: 25%;
+}
+.scard{
+    background: #fff;
+    padding: 20px 20px 50px 20px;
+    margin-top: 50px !important;
+}
+.about h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar img{
+    width: 100%;
+    padding: 10px 0px;
+}
+.scard{
+    margin: 20px;
+}
+
+.main::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.main-footer{
+    text-align: center;
+    background: rgb(179, 179, 179);
+    display: block;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+@media(max-width:800px){
+    .article, .sidebar{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media(max-width:400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+    }
+}
